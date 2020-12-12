@@ -8,6 +8,10 @@
                <Setter Property="HasShadow"         Value="False"/>
                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
            </Style>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="Black"/>
+                <Setter Property="FontFamily" Value="ProductSans"/>
+            </Style>
             <!-- -->
            <Style x:Key="MainAmount" TargetType="Label"> 
                <Setter Property="FontAttributes"    Value="Bold"/>
@@ -16,10 +20,10 @@
            </Style>
            <Style x:Key="SecundaryText" TargetType="Label"> 
                <Setter Property="TextColor"         Value="Silver"/>
-               <Setter Property="FontSize"          Value="16"/> 
+               <Setter Property="FontSize"          Value="14"/> 
            </Style>
            <Style x:Key="DivisionLine" TargetType="Line"> 
-               <Setter Property="TranslationY"      Value="{d:OnPlatform Android='15', iOS='20'}"/>
+               
                <Setter Property="VerticalOptions"   Value="Center"/>
                <Setter Property="HorizontalOptions" Value="Center"/>
                <Setter Property="StrokeDashArray"   Value="1,6"/>
@@ -28,6 +32,14 @@
                <Setter Property="Stroke"            Value="Silver"/>
                <Setter Property="StrokeThickness"   Value="2"/>
            </Style>
+            <Style x:Key="SolidDivisionLine" TargetType="Line" BasedOn="{StaticResource DivisionLine}">
+                <Setter Property="StrokeDashArray"   Value=""/>
+            </Style>
+
+            <Style x:Key="HRuleSolid" TargetType="BoxView">
+                <Setter Property="BackgroundColor" Value="Silver"/>
+                <Setter Property="HeightRequest" Value="1"/>
+            </Style>
 
         </ResourceDictionary>
     </Application.Resources>
