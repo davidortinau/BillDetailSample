@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:PanCake="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:common="clr-namespace:BillDetailSample.Common"
              BackgroundColor="#efefef"
              x:Class="BillDetailSample.Views.BillDetailPage">
     <ContentPage.Content>
@@ -14,8 +15,13 @@
                     <Grid RowDefinitions="80,40,26" Margin="30,0">
                         <Grid Grid.Row="2" Margin="-30,0">
                             <Line Style="{StaticResource DivisionLine}" />
-                            <Path Data="M0 26C7.1797 26 13 20.1797 13 13C13 5.8203 7.1797 0 0 0V26Z" Fill="#EFEFEF" StrokeThickness="0" HorizontalOptions="Start" VerticalOptions="Center" />
-                            <Path Data="M0 13C0 20.1797 5.8203 26 13 26V0C5.8203 0 0 5.8203 0 13Z" Fill="#EFEFEF" StrokeThickness="0" HorizontalOptions="End" VerticalOptions="Center" />
+                            <!-- Circles here   -->
+                            <Path Data="M0 26C7.1797 26 13 20.1797 13 13C13 5.8203 7.1797 0 0 0V26Z" Fill="#EFEFEF" StrokeThickness="0"/>
+                            <Path Data="M13 0C5.8203 0 0 5.8203 0 13C0 20.1797 5.8203 26 13 26L13 0Z" Fill="#EFEFEF"
+                                  StrokeThickness="0"
+                                  HorizontalOptions="End"
+                                  />
+
                         </Grid>
 
                         <Label Grid.Row="0" Text="$181.94" Style="{StaticResource MainAmount}" VerticalOptions="End"/>
@@ -133,7 +139,15 @@
                 </Label>
 
                 <Grid Grid.Row="4" ColumnDefinitions="*,*" Padding="15">
-                    <Button Grid.Column="0"  ImageSource="Arrow" Text="Pay Later" TextColor="Black" FontAttributes="Bold" BackgroundColor="#e4e4e4" CornerRadius="10" HeightRequest="50" Margin="10,5,10,20"/>
+                    <Button Grid.Column="0" Text="Pay Later" TextColor="Black" FontAttributes="Bold" BackgroundColor="#e4e4e4" CornerRadius="10" HeightRequest="50" Margin="10,5,10,20">
+                        <Button.ImageSource>
+                            <FontImageSource
+                                FontFamily="Typicons"
+                                Glyph="{x:Static common:IconFont.ArrowDownThick}"
+                                Color="Black"
+                                Size="18"/>
+                        </Button.ImageSource>
+                        </Button>
                     <Button Grid.Column="1" Text="Pay now" TextColor="White" FontAttributes="Bold" BackgroundColor="Black" CornerRadius="10" Margin="5,5,10,20" HeightRequest="50"/>
                 </Grid>
 

@@ -1,16 +1,19 @@
-﻿<Properties StartupConfiguration="Multiple Projects" NuGet.AddPackagesDialog.IncludePrerelease="True">
-  <MonoDevelop.Ide.ItemProperties.BillDetailSample.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.97E4E675-2B91-4A15-AF9D-3D4D981B54A3" />
+﻿<Properties StartupConfiguration="{D33D42FA-3170-4600-82F9-657E6B8BA9ED}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.ItemProperties.BillDetailSample.iOS TriggeredFromHotReload="False" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.27405250-6A67-466C-9E46-99F07D3F5380" />
   <MonoDevelop.Ide.Workbench ActiveDocument="BillDetailSample/Views/BillDetailPage.xaml">
     <Files>
-      <File FileName="BillDetailSample/Views/BillDetailPage.xaml" Line="15" Column="54" />
-      <File FileName="BillDetailSample/App.xaml" />
-      <File FileName="BillDetailSample/AssemblyInfo.cs" />
+      <File FileName="BillDetailSample/AssemblyInfo.cs" Line="6" Column="56" />
+      <File FileName="BillDetailSample/Views/BillDetailPage.xaml" Line="148" Column="44" />
+      <File FileName="BillDetailSample/Common/Typicons.cs" Line="5" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="BillDetailSample" expanded="True">
             <Node name="BillDetailSample" expanded="True">
+              <Node name="Common" expanded="True">
+                <Node name="Fonts" expanded="True" />
+              </Node>
               <Node name="Views" expanded="True">
                 <Node name="BillDetailPage.xaml" selected="True" />
               </Node>

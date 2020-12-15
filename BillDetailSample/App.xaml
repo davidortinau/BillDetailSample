@@ -3,35 +3,38 @@
     <Application.Resources>
         <ResourceDictionary>
             <!-- Global styles-->
-           <Style TargetType="Frame"> 
-               <Setter Property="CornerRadius"      Value="20"/>
-               <Setter Property="HasShadow"         Value="False"/>
-               <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
-           </Style>
+            <Style TargetType="Frame">
+                <Setter Property="CornerRadius"      Value="20"/>
+                <Setter Property="HasShadow"         Value="False"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+
             <Style TargetType="Label">
                 <Setter Property="TextColor" Value="Black"/>
                 <Setter Property="FontFamily" Value="ProductSans"/>
             </Style>
-            <!-- -->
-           <Style x:Key="MainAmount" TargetType="Label"> 
-               <Setter Property="FontAttributes"    Value="Bold"/>
-               <Setter Property="FontSize"          Value="22"/>
-               <Setter Property="HorizontalOptions" Value="Center"/>
-           </Style>
-           <Style x:Key="SecundaryText" TargetType="Label"> 
-               <Setter Property="TextColor"         Value="Silver"/>
-               <Setter Property="FontSize"          Value="14"/> 
-           </Style>
-           <Style x:Key="DivisionLine" TargetType="Line"> 
-               
-               <Setter Property="VerticalOptions"   Value="Center"/>
-               <Setter Property="HorizontalOptions" Value="Center"/>
-               <Setter Property="StrokeDashArray"   Value="1,6"/>
-               <Setter Property="X2"                Value="320"/>
-               <Setter Property="StrokeLineCap"     Value="Square"/>
-               <Setter Property="Stroke"            Value="Silver"/>
-               <Setter Property="StrokeThickness"   Value="2"/>
-           </Style>
+
+
+            <!-- App Styles -->
+            <Style x:Key="MainAmount" TargetType="Label">
+                <Setter Property="FontAttributes"    Value="Bold"/>
+                <Setter Property="FontSize"          Value="22"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+            <Style x:Key="SecundaryText" TargetType="Label">
+                <Setter Property="TextColor"         Value="Silver"/>
+                <Setter Property="FontSize"          Value="14"/>
+            </Style>
+            <Style x:Key="DivisionLine" TargetType="Line">
+
+                <Setter Property="VerticalOptions"   Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="StrokeDashArray"   Value="1,6"/>
+                <Setter Property="X2"                Value="320"/>
+                <Setter Property="StrokeLineCap"     Value="Square"/>
+                <Setter Property="Stroke"            Value="Silver"/>
+                <Setter Property="StrokeThickness"   Value="2"/>
+            </Style>
             <Style x:Key="SolidDivisionLine" TargetType="Line" BasedOn="{StaticResource DivisionLine}">
                 <Setter Property="StrokeDashArray"   Value=""/>
             </Style>
